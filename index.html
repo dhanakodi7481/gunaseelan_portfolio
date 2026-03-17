@@ -6,7 +6,38 @@
   <title>Gunaseelan R | SAP CPI Integration Consultant</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet"/>
   <style>
+/* --- Custom Scrollbar for Webkit (Chrome, Safari, Edge) --- */
 
+/* 1. The width/height of the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;  /* Vertical scrollbar width */
+  height: 6px; /* Horizontal scrollbar height */
+}
+
+/* 2. The background track (the empty part) */
+::-webkit-scrollbar-track {
+  background: rgba(2, 11, 24, 0.95); /* Matches your deep navy background */
+  border-radius: 10px;
+}
+
+/* 3. The draggable handle (the "thumb") */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--blue), #00d2ff); /* Glowing gradient */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Slight edge for definition */
+}
+
+/* 4. Hover effect on the handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; /* Turns white/bright on hover for feedback */
+  box-shadow: 0 0 10px var(--blue); /* Adds a neon glow */
+}
+
+/* --- Firefox Support (Limited styling) --- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue) rgba(2, 11, 24, 0.95);
+}
 
     /* Tablet and Mobile (under 992px) */
 @media (max-width: 992px) {
